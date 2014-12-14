@@ -1,0 +1,13 @@
+Statix\GuestbookBundle\Entity\Review:
+  properties:
+    site:
+       - NotBlank: ~
+       - Url: ~
+    reviewMark:
+           - NotBlank: ~
+    review:
+           - NotBlank: ~
+    email:
+           - Email:
+               message: The email "{{ value }}" is not a valid email.
+               checkMX: true

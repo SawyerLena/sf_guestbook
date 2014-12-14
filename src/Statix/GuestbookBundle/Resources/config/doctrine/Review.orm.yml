@@ -1,0 +1,19 @@
+Statix\GuestbookBundle\Entity\Review:
+    type: entity
+    table: review
+    id:
+        id:
+            type: integer
+            generator: { strategy: AUTO }
+    fields:
+        site:
+            type: string
+            length: 100
+        reviewMark:
+            type: decimal
+            scale: 1
+        review:
+            type: text
+        email:
+            type: string
+            length: 100

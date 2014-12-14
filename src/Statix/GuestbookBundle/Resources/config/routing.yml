@@ -1,3 +1,11 @@
 statix_guestbook_homepage:
-    path:     /hello/{name}
-    defaults: { _controller: StatixGuestbookBundle:Default:index }
+    path: /
+    defaults: { _controller: StatixGuestbookBundle:Index:index }
+
+statix_guestbook_new_review:
+    path:     /new-review
+    defaults: { _controller: StatixGuestbookBundle:Review:new }
+
+statix_guestbook_review-success:
+    path: /review-success
+    defaults: { _controller: StatixGuestbookBundle:Review:success }

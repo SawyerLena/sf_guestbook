@@ -1,0 +1,29 @@
+{% extends 'StatixGuestbookBundle:Default:guestbook.html.twig' %}
+
+{% block content %}
+    <div class="homepage-left">
+        <a href="{{ path('statix_guestbook_new_review') }}">Add Your Review</a>
+    </div>
+    <div class="homepage-center">
+        <img class="guestbook-title-img" src="{{ asset('bundles/statixguestbook/images/review_4.jpg') }}" title="Site Reviews" />
+        <div class="guestbook-title-text">
+            <h2 class="need">We need your reviews.</h2>
+            <h2 class="want">We want your reviews...</h2>
+            <h3 class="hungry">We hungry for your reviews....</h3>
+        </div>
+    </div>
+    <div class="homepage-right">
+        <a href="#">View All Reviews</a>
+    </div>
+    <div class="review-images">
+        <img class="review-image-1" src="{{ asset('bundles/statixguestbook/images/review_1.jpg') }}" title="Site Reviews" />
+        <img class="review-image-2" src="{{ asset('bundles/statixguestbook/images/review_2.jpg') }}" title="Site Reviews" />
+        <img class="review-image-3" src="{{ asset('bundles/statixguestbook/images/review_3.png') }}" title="Site Reviews" />
+        <img class="review-image-4" src="{{ asset('bundles/statixguestbook/images/review_5.jpg') }}" title="Site Reviews" />
+        <img class="review-image-5" src="{{ asset('bundles/statixguestbook/images/review_6.png') }}" title="Site Reviews" />
+        <img class="review-image-6" src="{{ asset('bundles/statixguestbook/images/review_7.png') }}" title="Site Reviews" />
+        <img class="review-image-7" src="{{ asset('bundles/statixguestbook/images/review_8.jpg') }}" title="Site Reviews" />
+        <img class="review-image-8" src="{{ asset('bundles/statixguestbook/images/review_9.jpg') }}" title="Site Reviews" />
+        <img class="review-image-9" src="{{ asset('bundles/statixguestbook/images/review_10.jpg') }}" title="Site Reviews" />
+    </div>
+{% endblock %}

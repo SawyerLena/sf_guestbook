@@ -1,0 +1,8 @@
+{% extends 'StatixGuestbookBundle:Default:guestbook.html.twig' %}
+
+{% block content %}
+    <a href="{{ path('statix_guestbook_homepage') }}">Back to Homepage</a>
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+    {{ form_end(form) }}
+{% endblock %}
