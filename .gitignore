@@ -1,4 +1,7 @@
+.idea/
 /.idea/
+.idea/*
+.idea/workspace.xml
 /web/bundles/
 /app/bootstrap.php.cache
 /app/cache/*
