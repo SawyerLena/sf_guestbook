@@ -1,0 +1,27 @@
+{% extends 'StatixGuestbookBundle:Default:guestbook.html.twig' %}
+
+{% block content %}
+    <a href="{{ path('statix_guestbook_homepage') }}">Back to Homepage</a>
+    <h2>Check out all reviews!</h2>
+    <ul class="review-table">
+        <li class="table-head">
+            <ul>
+                <li>Site</li>
+                <li class="review-mark">Review Mark</li>
+                <li class="table-review">Review</li>
+                <li>Reviewer Email</li>
+            </ul>
+        </li>
+        {% for review in reviews %}
+            <li class="table-cell">
+                <ul>
+                    <li><a href="{{ review.site }}">{{ review.site }}</a></li>
+                    <li class="review-mark">{{ review.reviewMark }}</li>
+                    <li class="table-review">{{ review.review }}</li>
+                    <li>{{ review.email }}</li>
+                </ul>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="{{ path('statix_guestbook_new_review') }}">Add Your Own Review!</a>
+{% endblock %}

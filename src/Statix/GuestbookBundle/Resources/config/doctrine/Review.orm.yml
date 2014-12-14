@@ -11,7 +11,8 @@ Statix\GuestbookBundle\Entity\Review:
             length: 100
         reviewMark:
             type: decimal
-            scale: 1
+            length: 2
+            scale: 0
         review:
             type: text
         email:

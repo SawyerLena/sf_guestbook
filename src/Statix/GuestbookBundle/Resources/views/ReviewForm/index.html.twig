@@ -2,7 +2,37 @@
 
 {% block content %}
     <a href="{{ path('statix_guestbook_homepage') }}">Back to Homepage</a>
-    {{ form_start(form) }}
-    {{ form_widget(form) }}
+    {{ form_start(form, { 'attr': {'id': "review-form"} }) }}
+        {{ form_errors(form) }}
+        <div>
+            <ul class="review-site">
+                {{ form_errors(form.site) }}
+                <li>{{ form_label(form.site) }}</li>
+                <li>{{ form_widget(form.site, { 'attr': {'placeholder': 'Enter valid URL within http://'} }) }}</li>
+            </ul>
+        </div>
+    <div>
+        <ul class="review-review-mark">
+            {{ form_errors(form.reviewMark) }}
+            <li>{{ form_label(form.reviewMark) }}</li>
+            <li>{{ form_widget(form.reviewMark) }}</li>
+        </ul>
+    </div>
+    <div>
+        <ul class="review-review">
+            {{ form_errors(form.review) }}
+            <li>{{ form_label(form.review) }}</li>
+            <li>{{ form_widget(form.review, { 'attr': {'rows': '8'} }) }}</li>
+        </ul>
+    </div>
+    <div>
+        <ul class="review-email">
+            {{ form_errors(form.email) }}
+            <li>{{ form_label(form.email) }}</li>
+            <li>{{ form_widget(form.email, { 'attr': {'placeholder': 'Enter your email'} }) }}</li>
+        </ul>
+    </div>
+
     {{ form_end(form) }}
+    <a href="{{ path('statix_guestbook_view_all') }}">View All Reviews</a>
 {% endblock %}

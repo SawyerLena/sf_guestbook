@@ -9,3 +9,7 @@ statix_guestbook_new_review:
 statix_guestbook_review-success:
     path: /review-success
     defaults: { _controller: StatixGuestbookBundle:Review:success }
+
+statix_guestbook_view_all:
+    path: /view-all
+    defaults: { _controller: StatixGuestbookBundle:Review:view }
