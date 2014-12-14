@@ -1,0 +1,3 @@
+statix_guestbook_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: StatixGuestbookBundle:Default:index }

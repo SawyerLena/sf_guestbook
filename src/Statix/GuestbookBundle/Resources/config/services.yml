@@ -1,0 +1,4 @@
+services:
+#    statix_guestbook.example:
+#        class: Statix\GuestbookBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

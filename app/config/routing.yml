@@ -1,3 +1,11 @@
+statix_guestbook:
+    resource: "@StatixGuestbookBundle/Resources/config/routing.yml"
+    prefix:   /
+
+statix_guestbook_guestbook:
+    resource: "@StatixGuestbookGuestbookBundle/Resources/config/routing.yml"
+    prefix:   /
+
 app:
     resource: @AppBundle/Controller/
     type:     annotation
